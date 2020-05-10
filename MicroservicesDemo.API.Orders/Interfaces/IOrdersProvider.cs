@@ -1,0 +1,13 @@
+﻿using MicroservicesDemo.API.Orders.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace MicroservicesDemo.API.Orders.Interfaces
+{
+    public interface IOrdersProvider
+    {
+        Task<(bool IsSuccess, IEnumerable<Order> Orders, string ErrorMessage)> GetOrdersAsync(int customerId);
+    }
+}
