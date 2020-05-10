@@ -44,7 +44,7 @@ namespace MicroservicesDemo.Api.Products.Test
             var result = await productsProvider.GetProductsAsync();
 
             Assert.True(result.IsSuccess);
-            Assert.True(result.Products.Any());
+            Assert.NotEmpty(result.Products);
             Assert.Null(result.ErrorMessage);
         }
 
