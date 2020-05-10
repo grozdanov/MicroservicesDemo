@@ -49,10 +49,10 @@ namespace MicroservicesDemo.Api.Products.Test
         }
 
         [Fact]
-        public async void GetProductReturnsproductUsingValidId()
+        public async void GetProductReturnsProductUsingValidId()
         {
             var options = new DbContextOptionsBuilder<ProductDbContext>()
-                .UseInMemoryDatabase(nameof(GetProductReturnsproductUsingValidId))
+                .UseInMemoryDatabase(nameof(GetProductReturnsProductUsingValidId))
                 .Options;
             var dbContext = new ProductDbContext(options);
 
@@ -73,10 +73,10 @@ namespace MicroservicesDemo.Api.Products.Test
         }
 
         [Fact]
-        public async void GetProductReturnsproductUsingInvalidId()
+        public async void GetProductReturnsProductUsingInvalidId()
         {
             var options = new DbContextOptionsBuilder<ProductDbContext>()
-                .UseInMemoryDatabase(nameof(GetProductReturnsproductUsingValidId))
+                .UseInMemoryDatabase(nameof(GetProductReturnsProductUsingInvalidId))
                 .Options;
             var dbContext = new ProductDbContext(options);
 
